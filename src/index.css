@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Stalemate');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.navbar {
+  box-shadow: none;
+  padding: 50px 0;
+}
+
+/*section {
+  padding: 50px 0;
+}*/
+
+.section {
+  padding: 50px 0;
+}
+
+.artsy-text {
+  font-family: 'Stalemate', cursive;
+  font-size: 40px;
+}
