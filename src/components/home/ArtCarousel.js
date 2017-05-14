@@ -7,13 +7,14 @@ import { Carousel, Image } from 'react-bootstrap';
 import musclesImg from '../../images/muscles.jpg';
 import sisterImg from '../../images/sister.jpg';
 import nakedImg from '../../images/naked.jpg';
+import AnimatedImage from '../shared/AnimatedImage';
 
-const ArtCarousel = (props) => {
+const ArtCarousel = (props: Object) => {
 
   const _renderItem = (imgSrc: string) => {
     return(
       <Carousel.Item>
-        <Image src={imgSrc}/>
+        <AnimatedImage src={imgSrc}/>
       </Carousel.Item>
     );
   };

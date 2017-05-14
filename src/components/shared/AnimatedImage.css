@@ -1,0 +1,21 @@
+.animated-image-enter {
+  opacity: 0.5;
+}
+.animated-image-enter.animated-image-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+.animated-image-leave {
+  opacity: 1;
+}
+.animated-image-leave.animated-image-leave-active {
+  opacity: 0.5;
+  transition: opacity 150ms ease-in;
+}
+.animated-image-appear {
+  opacity: 0.01;
+}
+.animated-image-appear.animated-image-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}

@@ -10,13 +10,14 @@ import {
 } from 'react-bootstrap';
 
 import holdImg from '../../images/hold.jpg';
+import AnimatedImage from '../shared/AnimatedImage';
 
 const CharcoalView = (props: Object) => {
   return (
     <Grid>
       <Row>
         <Col md={8} sm={12}>
-          <Image responsive src={holdImg} />
+          <AnimatedImage responsive src={holdImg} />
         </Col>
         <Col md={4} sm={12}>
           <PageHeader> <small>Painting Details</small> </PageHeader>

@@ -17,8 +17,8 @@ const publicDir = `${__dirname}/../public/`;
 const transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-        user: 'reptilijonas@gmail.com',
-        pass: 'Karakushkaz16'
+        user: 'artportfolioautoemail@gmail.com',
+        pass: 'artportfolio'
     }
 });
 

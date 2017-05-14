@@ -9,6 +9,7 @@ import {
   PageHeader,
   Thumbnail
 } from 'react-bootstrap';
+import { CSSTransitionGroup } from 'react-transition-group';
 
 import holdImg from '../../images/hold.jpg';
 import musclesImg from '../../images/muscles.jpg';
@@ -16,6 +17,7 @@ import muscles2Img from '../../images/muscles2.jpg';
 //import testImg from '../../images/test.JPG';
 import sisterImg from '../../images/sister.jpg';
 import horsemenImg from '../../images/horsemen.jpg';
+import AnimatedImage from '../shared/AnimatedImage';
 
 // TODO: spread into several components, could create a template comp
 // for different collections...
@@ -45,7 +47,7 @@ class CollectionView extends React.Component {
   _renderThumb(index: number, imgSrc: string) {
     return (
       <Col md={3} sm={2} xs={3} key={index}>
-        <Thumbnail className={index === this.state.selectedImgIndex ? 'active' : ''} href="#" alt="171x180" src={imgSrc} onClick={this._onThumbClick.bind(this, index)} />
+        <AnimatedImage thumbnail className={index === this.state.selectedImgIndex ? 'active' : ''} src={imgSrc} onClick={this._onThumbClick.bind(this, index)} />
       </Col>
     )
   }
@@ -77,7 +79,7 @@ class CollectionView extends React.Component {
       <Grid>
         <Row>
           <Col md={8} sm={12}>
-            <Image responsive src={selectedImgSrc} />
+            <AnimatedImage src={selectedImgSrc} />
           </Col>
           <Col md={4} sm={12}>
             { this._renderThumbs() }
