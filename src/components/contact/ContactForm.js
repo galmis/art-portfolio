@@ -67,7 +67,7 @@ class ContactForm extends React.Component {
     const { isPosting } = this.props;
 
     return (
-      <Loadable spinner active={isPosting} text='Sending...'>
+      <Loadable spinner active={isPosting} text='Sending...' background='none' color='#bbbbbb'>
         { this._renderAlert() }
 
         <Form horizontal onSubmit={this._onSubmit.bind(this)}>
