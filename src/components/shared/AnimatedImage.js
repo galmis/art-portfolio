@@ -26,6 +26,7 @@ const AnimatedImage = (props: Object) => {
 
     <CSSTransitionGroup transitionName="animated-image" transitionEnterTimeout={500}
       transitionLeaveTimeout={300}
+      transitionAppearTimeout={500}
       transitionAppear={true}>
       { _renderComp() }
     </CSSTransitionGroup>

@@ -7,11 +7,10 @@ import {
 import PropTypes from 'prop-types';
 
 const ContactAlert = (props: Object) => {
-  debugger;
+
   const { text, isError, resetPostAlert } = props;
 
   const _onDismiss = () => {
-    debugger;
     resetPostAlert();
   };
 

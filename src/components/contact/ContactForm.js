@@ -33,7 +33,6 @@ class ContactForm extends React.Component {
   }
 
   _onSubmit(event: Object) {
-    debugger;
     event.preventDefault();
     const data = {
       name: this.state.name,
@@ -53,7 +52,6 @@ class ContactForm extends React.Component {
   _renderAlert() {
     if (this.props.isAlertVisible) {
       const { errorMsg, actions } = this.props;
-      debugger;
       const isError = errorMsg ? true : false;
       const alertText = isError ? errorMsg : 'Yay! Your message has been successfully sent.';
       return (
@@ -63,7 +61,6 @@ class ContactForm extends React.Component {
   }
 
   render() {
-    debugger;
     const { isPosting } = this.props;
 
     return (
